@@ -1,7 +1,7 @@
 <?php
-$saluto = 'ciaoo mondo';
+$saluto = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam varius suscipit tortor. Vivamus et lacus nisl. Praesent fermentum vestibulum lobortis. Sed sodales commodo tortor, nec tincidunt quam laoreet vitae. Integer vitae nisl id arcu gravida elementum. Pellentesque maximus lacinia tellus eu volutpat. Vestibulum ornare dapibus erat ut semper.';
 $badword = $_GET['badword'];
-$new_word = str_replace($badword, "***", $badword);
+$new_word = str_replace($badword, "***", $saluto);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +14,7 @@ $new_word = str_replace($badword, "***", $badword);
 </head>
 
 <body>
-    <h1><?php echo $saluto ?></h1>
+    <p><?php echo $saluto ?></p>
     <p><?php echo strlen($saluto) ?></p>
     <p><?php echo $new_word ?></p>
     <p><?php echo strlen($new_word) ?></p>
